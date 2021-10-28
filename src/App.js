@@ -5,7 +5,7 @@ const App = () => {
     const [response, setResponse] = useState([]);
     let socket;
     useEffect(() => {
-         socket = io.connect("http://localhost:4000");
+         socket = io.connect("https://socket-backend-3towjekr2q-ue.a.run.app");
         socket.on("status", data => {
           setResponse(data);
           console.log("data", data)
