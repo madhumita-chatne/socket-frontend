@@ -6,8 +6,8 @@ const App = () => {
     const [welcome, setWelcome] = useState("")
     let socket;
     useEffect(() => {
-        //  socket = io.connect("https://socket-backend-3towjekr2q-ue.a.run.app");
-        socket = io.connect("http://localhost:4000")
+         socket = io.connect("https://socket-backend-3towjekr2q-ue.a.run.app");
+        // socket = io.connect("http://localhost:4000")
 
         socket.on("connect", data=>{
          setWelcome("Welcome!")
